@@ -1,0 +1,48 @@
+#mobile, .mobile{
+    display: none;
+}
+.desktop p, .mobile p{
+    color: rgba(83, 28, 134, 0.836);
+}
+#desktop ul, .desktop ul{
+    list-style: none;
+    display: flex;
+}
+#desktop ul li, .desktop ul li{
+    padding: 0 15px;
+    font-size: 20px;
+}
+#desktop ul li a, .desktop ul li a{
+    color: rgba(148, 73, 148, 0.767);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#desktop ul li a:hover, .desktop ul li a:hover{
+    text-decoration: underline;
+    font-size: 25px;
+}
+.col{
+    display: inline-flex;
+    width: 33%;
+}
+.col1 ul, .col2 ul{
+    list-style: none;
+}
+@media (max-width:600px){
+    video{
+        display: none;
+    }
+    #desktop, .desktop{
+        display: none;
+    }
+    #mobile, .mobile{
+        display: block;
+    }
+    #mobile select, .mobile select{
+        width: 100%;
+    }
+    .col{
+        display: block;
+        width: 100%;
+    }
+}
